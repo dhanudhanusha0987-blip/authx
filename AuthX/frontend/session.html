@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Session Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 50px 20px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+            color: #0b3c8c;
+        }
+
+        .header h2 {
+            margin-top: 10px;
+            font-size: 22px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .divider {
+            width: 80px;
+            height: 4px;
+            background: #0b3c8c;
+            margin: 18px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Image section */
+        .image-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 460px;
+            height: auto;
+        }
+
+        /* Content */
+        .content {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 40px 70px;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 28px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h3 {
+            font-size: 20px;
+            color: #0b3c8c;
+            margin-bottom: 12px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        ul li, ol li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .note {
+            margin-top: 35px;
+            padding: 16px 20px;
+            background: #f3f7ff;
+            border-left: 5px solid #0b3c8c;
+            font-size: 15px;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn {
+            background: #0b3c8c;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background: #092f6b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>AuthX</h1>
+        <h2>Session Validation Authentication</h2>
+        <div class="divider"></div>
+    </div>
+
+    <!-- Image -->
+    <div class="image-section">
+        <!-- Add image in frontend folder -->
+        <img src="images/session-validation.png" alt="Session Validation Authentication">
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <p>
+            <strong>Session Validation</strong> is a critical layer in Multi-Factor Authentication (MFA)
+            that ensures an authenticated session remains secure throughout its lifecycle.
+            It prevents unauthorized session reuse, hijacking, and prolonged access after logout
+            or inactivity.
+        </p>
+
+        <div class="section">
+            <h3>What Session Validation Includes</h3>
+            <ul>
+                <li>Session token generation and validation</li>
+                <li>Session timeout and expiration control</li>
+                <li>Secure cookie and token handling</li>
+                <li>Logout and session invalidation</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Session Validation Flow</h3>
+            <ol>
+                <li>User successfully completes previous MFA steps.</li>
+                <li>System generates a secure session token.</li>
+                <li>Session is continuously validated for activity.</li>
+                <li>Session expires after timeout or logout.</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h3>Security Practices</h3>
+            <ul>
+                <li>Secure HTTP-only and SameSite cookies</li>
+                <li>Short session expiration times</li>
+                <li>Automatic session termination on inactivity</li>
+                <li>Protection against session fixation and hijacking</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Real-World Applications</h3>
+            <ul>
+                <li>Online banking dashboards</li>
+                <li>Enterprise web applications</li>
+                <li>Healthcare and government portals</li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> Session Validation works alongside Knowledge, Possession,
+            and Human Verification factors to ensure continuous protection even after login.
+        </div>
+
+        <div class="btn-container">
+            <a href="mfa.html" class="btn">← Back to MFA</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

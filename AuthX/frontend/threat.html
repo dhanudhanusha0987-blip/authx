@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AuthX | Threat Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #020024, #0b3c91, #0ea5e9);
+    }
+
+    .container {
+      background: #ffffff;
+      width: 480px;
+      padding: 40px 35px;
+      border-radius: 18px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    }
+
+    .brand {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 600;
+      color: #1e3a8a;
+      margin-bottom: 6px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .desc {
+      text-align: center;
+      font-size: 14px;
+      color: #475569;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .item {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding: 12px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .item:hover {
+      background: #f8fafc;
+      animation: jumpOnce 0.45s ease forwards;
+    }
+
+    /* 🔑 One-time jump animation */
+    @keyframes jumpOnce {
+      0% {
+        transform: translateY(0);
+        box-shadow: none;
+      }
+      40% {
+        transform: translateY(-10px);
+        box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+      }
+      100% {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.14);
+      }
+    }
+
+    /* Reset when cursor leaves */
+    .item:not(:hover) {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    .line {
+      width: 4px;
+      background: #2563eb;
+      border-radius: 3px;
+    }
+
+    .content h4 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .content p {
+      margin: 4px 0 0;
+      font-size: 13px;
+      color: #475569;
+    }
+
+    .icon {
+      font-size: 16px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .btn.secondary {
+      background: #e5e7eb;
+      color: #1f2937;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .item-link {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+}
+
+.item-link:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="brand">AuthX</div>
+    <div class="title">Threat Detection</div>
+
+    <p class="desc">
+      Threat Detection identifies abnormal and suspicious login behavior
+      to prevent unauthorized access and security breaches.
+    </p>
+
+   <div class="item">
+  <div class="line"></div>
+  <div class="content">
+    <h4>
+      <a href="suspicious-login.html" class="item-link">
+        🚨 Suspicious Login Attempts
+      </a>
+    </h4>
+    <p>Detects repeated failures, brute-force, and credential-stuffing attacks.</p>
+  </div>
+</div>
+
+
+    <div class="item">
+      <div class="line"></div>
+      <div class="content">
+       <a href="unusual-login-locations.html" class="item-link">
+        🌍 Unusual Login Locations</a>
+        <p>Flags logins from unexpected countries or geographic regions.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="line"></div>
+      <div class="content">
+        <a href="unknown-or-risky-devices.html" class="item-link">💻 Unknown or Risky Devices</a>
+        <p>Identifies access from new, untrusted, or compromised devices.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="line"></div>
+      <div class="content">
+        <a href="behavioral-anomalies.html" class="item-link">📊 Behavioral Anomalies</a>
+        <p>Monitors unusual login timing, frequency, and access patterns.</p>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn" onclick="window.location.href='mfa.html'">
+        ← Back to MFA
+      </button>
+      <button class="btn secondary" onclick="window.location.href='index.html'">
+        Home
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>

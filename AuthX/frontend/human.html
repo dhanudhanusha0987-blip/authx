@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Human Verification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+            color: #0b3c8c;
+        }
+
+        .header h2 {
+            margin-top: 8px;
+            font-size: 22px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .divider {
+            width: 80px;
+            height: 4px;
+            background: #0b3c8c;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        /* Image Section */
+        .image-section {
+            text-align: center;
+            margin: 30px 0 40px;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 420px;
+            height: auto;
+        }
+
+        /* Content */
+        .content {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 40px 60px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h3 {
+            font-size: 20px;
+            color: #0b3c8c;
+            margin-bottom: 12px;
+        }
+
+        .section p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        ul {
+            margin: 12px 0 0 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        ol {
+            margin: 12px 0 0 20px;
+        }
+
+        ol li {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        /* Note */
+        .note {
+            margin-top: 30px;
+            padding: 16px 20px;
+            border-left: 5px solid #0b3c8c;
+            background: #f3f7ff;
+            font-size: 15px;
+        }
+
+        /* Button */
+        .btn-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn {
+            background: #0b3c8c;
+            color: #fff;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background: #092f6b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>AuthX</h1>
+        <h2>Human Verification Authentication</h2>
+        <div class="divider"></div>
+    </div>
+
+    <!-- Image -->
+    <div class="image-section">
+        <!-- CHANGE IMAGE NAME IF NEEDED -->
+        <img src="images/human-verification.png" alt="Human Verification Authentication">
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+
+        <div class="section">
+            <p>
+                <strong>Human Verification</strong> is a Multi-Factor Authentication (MFA) layer designed to ensure
+                that authentication requests are performed by real human users rather than automated bots,
+                scripts, or malicious software. This factor protects systems from automated attacks such as
+                credential stuffing and brute-force attempts.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Common Human Verification Methods</h3>
+            <ul>
+                <li>CAPTCHA (text-based or image-based challenges)</li>
+                <li>reCAPTCHA behavioral analysis</li>
+                <li>Checkbox or puzzle-based verification</li>
+                <li>Biometric confirmation (face or fingerprint)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Authentication Flow</h3>
+            <ol>
+                <li>User initiates login after entering credentials.</li>
+                <li>System presents a human verification challenge.</li>
+                <li>User successfully completes the challenge.</li>
+                <li>System confirms human presence and proceeds to the next MFA step.</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h3>Security Benefits</h3>
+            <ul>
+                <li>Blocks automated bot attacks</li>
+                <li>Reduces credential stuffing attempts</li>
+                <li>Improves system trust and reliability</li>
+                <li>Protects against malicious scripts</li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> Human Verification alone is not sufficient for high-security systems.
+            AuthX combines this factor with Knowledge, Possession, Session Validation, and Device & Location
+            checks to provide strong multi-layer protection.
+        </div>
+
+        <div class="btn-container">
+            <a href="mfa.html" class="btn">← Back to MFA</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Data Encryption</title>
+
+    <style>
+        /* ---------- RESET ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* ---------- BACKGROUND ---------- */
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #020c3a, #0b5ed7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ---------- MAIN CARD ---------- */
+        .main-card {
+            background: #ffffff;
+            width: 480px;
+            border-radius: 18px;
+            padding: 40px 35px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+        }
+
+        /* ---------- HEADERS ---------- */
+        .brand {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            color: #1e5eff;
+            margin-bottom: 6px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 14.5px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        /* ---------- ENCRYPTION ITEMS ---------- */
+        .encryption-item {
+            display: flex;
+            gap: 12px;
+            padding: 14px 0 14px 16px;
+            border-left: 4px solid #1e5eff;
+            margin-bottom: 22px;
+            text-decoration: none;
+            color: #1a1a1a;
+
+            /* Hover animation base */
+            transition: 
+                transform 0.25s ease,
+                box-shadow 0.25s ease,
+                background 0.25s ease;
+            border-radius: 10px;
+        }
+
+        /* 🔥 JUMPING EFFECT */
+        .encryption-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(30, 94, 255, 0.25);
+            background: #f8faff;
+        }
+
+        .item-icon {
+            font-size: 18px;
+            margin-top: 2px;
+        }
+
+        .item-text h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .item-text p {
+            font-size: 14.5px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* ---------- BUTTONS ---------- */
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 35px;
+        }
+
+        .btn-primary {
+            background: #1e5eff;
+            color: #ffffff;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #e9ecef;
+            color: #000;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-card">
+
+        <div class="brand">AuthX</div>
+        <div class="title">Data Encryption</div>
+
+        <p class="description">
+            Data Encryption protects sensitive information by converting it into
+            unreadable formats, ensuring confidentiality during storage and transmission.
+        </p>
+
+        <!-- Encryption at Rest -->
+        <a href="encryption-rest.html" class="encryption-item">
+            <span class="item-icon">🔒</span>
+            <div class="item-text">
+                <h4>Encryption at Rest</h4>
+                <p>Encrypts stored data in databases, files, and backups.</p>
+            </div>
+        </a>
+
+        <!-- Encryption in Transit -->
+        <a href="encryption-transit.html" class="encryption-item">
+            <span class="item-icon">📡</span>
+            <div class="item-text">
+                <h4>Encryption in Transit</h4>
+                <p>Protects data during network transmission using TLS.</p>
+            </div>
+        </a>
+
+        <!-- Secure Key Management -->
+        <a href="secure-key-management.html" class="encryption-item">
+            <span class="item-icon">🔑</span>
+            <div class="item-text">
+                <h4>Secure Key Management</h4>
+                <p>Manages encryption keys with rotation and access control.</p>
+            </div>
+        </a>
+
+        <!-- Strong Encryption Standards -->
+        <a href="strong-encryption-standards.html" class="encryption-item">
+            <span class="item-icon">🛡️</span>
+            <div class="item-text">
+                <h4>Strong Encryption Standards</h4>
+                <p>Uses AES, RSA, and industry-standard algorithms.</p>
+            </div>
+        </a>
+
+        <!-- Buttons -->
+        <div class="button-group">
+            <a href="index.html" class="btn-primary">← Back to Home</a>
+            <a href="mfa.html" class="btn-secondary">Back to MFA</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

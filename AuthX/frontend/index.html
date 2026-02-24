@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Smart Security</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">🔐 AuthX</div>
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <button>Get Started</button>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Securing Your Digital World</h1>
+        <p>Advanced Security Solutions for Your Business.</p>
+        <button onclick="window.location.href='login.php'">Login</button>
+
+        <button onclick="window.location.href='learnmore.html'">
+  Learn More
+</button>
+
+    </div>
+</div>
+
+<section class="features-section">
+  <h2 class="section-title">Our Security Features</h2>
+
+  <div class="features-grid">
+
+    <a href="mfa.html" class="feature-card">
+      <h3>Multi-Factor Authentication</h3>
+      <p>Multiple layers of security ensure safe access.</p>
+    </a>
+
+    <a href="threat.html" class="feature-card">
+      <h3>Threat Detection</h3>
+      <p>Detects abnormal and suspicious login behavior.</p>
+    </a>
+
+    <a href="data-encryption.html" class="feature-card">
+      <h3>Data Encryption</h3>
+      <p>Protects sensitive information securely.</p>
+    </a>
+
+    <a href="access-control.html" class="feature-card">
+      <h3>Access Control</h3>
+      <p>Manages user access intelligently.</p>
+    </a>
+
+  </div>
+</section>
+
+
+<script>
+  function goMFA() {
+    window.location.href = "mfa.html";
+  }
+
+  function goThreat() {
+    window.location.href = "threat.html";
+  }
+
+  function goEncryption() {
+    window.location.href = "encryption.html";
+  }
+
+  function goAccess() {
+    window.location.href = "access.html";
+  }
+</script>
+
+
+</body>
+</html>

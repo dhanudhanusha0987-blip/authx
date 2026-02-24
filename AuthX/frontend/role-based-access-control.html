@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Role-Based Access Control</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .brand {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            color: #0b3d91;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 4px;
+            background-color: #0b3d91;
+            margin: 15px auto 35px;
+            border-radius: 2px;
+        }
+
+        /* Image */
+        .top-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .top-image img {
+            max-width: 420px;
+            width: 100%;
+        }
+
+        /* Headings */
+        h2 {
+            color: #0b3d91;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        h3 {
+            color: #0b3d91;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Note box */
+        .note-box {
+            background-color: #f5f9ff;
+            border-left: 5px solid #0b3d91;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 15px;
+        }
+
+        .note-box strong {
+            color: #0b3d91;
+        }
+
+        /* Button */
+        .btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            background-color: #0b3d91;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 500;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #092f6b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Title -->
+    <div class="brand">AuthX</div>
+    <div class="subtitle">Role-Based Access Control</div>
+    <div class="divider"></div>
+
+    <!-- Image Section -->
+    <div class="top-image">
+        <img src="images/rbac.png" alt="Role Based Access Control">
+    </div>
+
+    <!-- Content -->
+    <h2>What is Role-Based Access Control?</h2>
+    <p>
+        Role-Based Access Control (RBAC) is a security approach that restricts system access
+        based on predefined roles. Permissions are assigned to roles rather than individual
+        users, simplifying access management and improving security.
+    </p>
+
+    <h3>Common Roles</h3>
+    <ul>
+        <li>Administrator – Full access to the system</li>
+        <li>Manager – Supervisory and reporting access</li>
+        <li>User – Limited functional access</li>
+        <li>Guest – Read-only or minimal access</li>
+    </ul>
+
+    <h3>How RBAC Works</h3>
+    <ol>
+        <li>User logs into the system</li>
+        <li>System identifies the assigned role</li>
+        <li>Permissions linked to the role are checked</li>
+        <li>Access is granted or denied accordingly</li>
+    </ol>
+
+    <h3>Security Practices</h3>
+    <ul>
+        <li>Least privilege enforcement</li>
+        <li>Centralized role management</li>
+        <li>Reduced administrative errors</li>
+        <li>Improved compliance and auditing</li>
+    </ul>
+
+    <h3>Real-World Applications</h3>
+    <ul>
+        <li>Hospital management systems</li>
+        <li>Enterprise admin dashboards</li>
+        <li>Banking and financial platforms</li>
+        <li>Cloud-based services</li>
+    </ul>
+
+    <div class="note-box">
+        <strong>Note:</strong> Role-Based Access Control is most effective when combined
+        with multi-factor authentication. AuthX integrates RBAC with Knowledge, Possession,
+        Human Verification, Session Validation, and Device & Location checks for layered security.
+    </div>
+
+    <div class="btn-container">
+        <a href="access-control.html" class="btn">← Back to Access Control</a>
+    </div>
+
+</div>
+
+</body>
+</html>

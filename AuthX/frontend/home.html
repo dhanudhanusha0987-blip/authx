@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Home</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        /* ================= NAVBAR ================= */
+        .navbar {
+            background: linear-gradient(135deg, #0b3d91, #082b64);
+            padding: 18px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+        }
+
+        /* ================= CONTENT ================= */
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 34px;
+            color: #0b3d91;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #0b3d91;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .info-box {
+            background: #ffffff;
+            padding: 25px;
+            margin-top: 40px;
+            border-left: 6px solid #0b3d91;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .info-box strong {
+            color: #0b3d91;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<div class="navbar">
+    <div class="logo">🔐 AuthX</div>
+    <div class="nav-links">
+        <a href="index.html">Landing</a>
+      
+    </div>
+</div>
+
+<!-- ================= PAGE CONTENT ================= -->
+<div class="container">
+
+    <h1>AuthX – Website Overview</h1>
+    <p>
+        AuthX is a smart and secure authentication platform designed to protect
+        digital identities and system resources using multiple layers of security,
+        intelligent access control, and continuous monitoring mechanisms.
+    </p>
+
+    <h2>Why AuthX?</h2>
+    <ul>
+        <li>Reduces unauthorized access to critical systems</li>
+        <li>Implements strong identity verification using MFA</li>
+        <li>Enforces least privilege access control</li>
+        <li>Detects suspicious login behavior in real time</li>
+        <li>Maintains accountability through audit logs</li>
+    </ul>
+
+    <h2>How AuthX Works</h2>
+    <ul>
+        <li>User initiates an access request</li>
+        <li>Multi-Factor Authentication verifies identity</li>
+        <li>Authorization policies validate permissions</li>
+        <li>Active sessions are continuously monitored</li>
+        <li>Audit logs are generated for every access event</li>
+    </ul>
+
+    <h2>Core Security Modules</h2>
+    <ul>
+        <li>Multi-Factor Authentication (Knowledge, Possession, Human factors)</li>
+        <li>Threat Detection and Suspicious Login Analysis</li>
+        <li>Role-Based Access Control (RBAC)</li>
+        <li>Attribute-Based Access Control (ABAC)</li>
+        <li>Principle of Least Privilege</li>
+        <li>Access Monitoring and Auditing</li>
+    </ul>
+
+    <h2>User Roles & Access Levels</h2>
+    <ul>
+        <li><strong>Administrator:</strong> Full control over system and security policies</li>
+        <li><strong>Manager:</strong> Monitoring, reporting, and limited administrative access</li>
+        <li><strong>User:</strong> Access limited to assigned resources</li>
+        <li><strong>Guest:</strong> Minimal and restricted access</li>
+    </ul>
+
+    <h2>Security Architecture</h2>
+    <p>
+        AuthX follows a layered security architecture based on the
+        defense-in-depth principle. Each security layer independently verifies
+        user legitimacy, ensuring that system compromise is highly unlikely.
+    </p>
+
+    <h2>Authentication vs Authorization</h2>
+    <p>
+        Authentication confirms the identity of a user, while authorization
+        determines what actions the authenticated user is permitted to perform.
+        AuthX strictly separates these processes to strengthen access enforcement.
+    </p>
+
+    <h2>Policy-Driven Access Control</h2>
+    <p>
+        Access decisions in AuthX are governed by centralized policies that
+        evaluate roles, attributes, and contextual information such as device,
+        location, and session behavior.
+    </p>
+
+    <h2>Session Security & Validation</h2>
+    <ul>
+        <li>Automatic session timeout after inactivity</li>
+        <li>Re-authentication during suspicious activity</li>
+        <li>Protection against session hijacking</li>
+    </ul>
+
+    <h2>Audit & Compliance Support</h2>
+    <ul>
+        <li>Detailed access and activity logs</li>
+        <li>Traceability of user actions</li>
+        <li>Supports internal and external security audits</li>
+    </ul>
+
+    <h2>Scalability & Future Scope</h2>
+    <p>
+        AuthX is designed to scale efficiently, allowing organizations to
+        expand users, roles, and security policies without major system changes.
+    </p>
+
+    <h2>Use-Case Scenarios</h2>
+    <ul>
+        <li>Hospital and healthcare management systems</li>
+        <li>Banking and financial platforms</li>
+        <li>Enterprise dashboards and admin portals</li>
+        <li>Secure educational and government systems</li>
+    </ul>
+
+    <div class="info-box">
+        <strong>Security Status:</strong> Active<br>
+        <strong>Current Access:</strong> Guest (Limited Privileges)<br>
+        <strong>Recommendation:</strong> Login to enable full AuthX security features.
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+CREATE DATABASE authx;
+USE authx;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(150) UNIQUE,
+    password VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE login_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_name VARCHAR(100),
+    email VARCHAR(150),
+    ip_address VARCHAR(50),
+    location VARCHAR(150),
+    login_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

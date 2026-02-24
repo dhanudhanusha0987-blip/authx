@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register | AuthX</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Poppins, Arial, sans-serif;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+}
+.card{
+    background:#fff;
+    width:420px;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.35);
+    text-align:center;
+}
+h2{
+    color:#667eea;
+}
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#667eea;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+}
+button:hover{
+    background:#5563d6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Create Account</h2>
+
+   <form action="../backend/register.php" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="password" name="password" placeholder="Password" required>
+
+    <!-- NO onclick here -->
+    <button type="submit">Register</button>
+</form>
+   
+</div>
+
+</body>
+</html>

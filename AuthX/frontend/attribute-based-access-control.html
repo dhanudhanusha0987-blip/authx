@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Attribute-Based Access Control</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .brand {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            color: #0b3d91;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 4px;
+            background-color: #0b3d91;
+            margin: 15px auto 35px;
+            border-radius: 2px;
+        }
+
+        /* Image */
+        .top-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .top-image img {
+            max-width: 420px;
+            width: 100%;
+        }
+
+        /* Headings */
+        h2 {
+            color: #0b3d91;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        h3 {
+            color: #0b3d91;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Note box */
+        .note-box {
+            background-color: #f5f9ff;
+            border-left: 5px solid #0b3d91;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 15px;
+        }
+
+        .note-box strong {
+            color: #0b3d91;
+        }
+
+        /* Button */
+        .btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            background-color: #0b3d91;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 500;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #092f6b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Title -->
+    <div class="brand">AuthX</div>
+    <div class="subtitle">Attribute-Based Access Control</div>
+    <div class="divider"></div>
+
+    <!-- Image Section -->
+    <div class="top-image">
+        <img src="images/abac.png" alt="Attribute Based Access Control">
+    </div>
+
+    <!-- Content -->
+    <h2>What is Attribute-Based Access Control?</h2>
+    <p>
+        Attribute-Based Access Control (ABAC) is an advanced access control model that
+        grants or denies access based on attributes associated with users, resources,
+        actions, and environmental conditions. Decisions are made dynamically using policies.
+    </p>
+
+    <h3>Common Attributes Used in ABAC</h3>
+    <ul>
+        <li>User attributes – role, department, clearance level</li>
+        <li>Resource attributes – data type, sensitivity, owner</li>
+        <li>Action attributes – read, write, delete</li>
+        <li>Environment attributes – time, location, device</li>
+    </ul>
+
+    <h3>How Attribute-Based Access Control Works</h3>
+    <ol>
+        <li>User requests access to a resource</li>
+        <li>System collects relevant attributes</li>
+        <li>Policies evaluate the attributes</li>
+        <li>Access is granted or denied dynamically</li>
+    </ol>
+
+    <h3>Security Practices in ABAC</h3>
+    <ul>
+        <li>Fine-grained access control</li>
+        <li>Context-aware authorization</li>
+        <li>Dynamic policy enforcement</li>
+        <li>Reduced over-privileged access</li>
+    </ul>
+
+    <h3>Real-World Applications</h3>
+    <ul>
+        <li>Healthcare data access systems</li>
+        <li>Government and defense platforms</li>
+        <li>Cloud and zero-trust architectures</li>
+        <li>Enterprise data protection systems</li>
+    </ul>
+
+    <div class="note-box">
+        <strong>Note:</strong> Attribute-Based Access Control provides high flexibility
+        and scalability. AuthX combines ABAC with MFA, session validation,
+        and device & location checks to deliver adaptive and intelligent security.
+    </div>
+
+    <div class="btn-container">
+        <a href="access-control.html" class="btn">← Back to Access Control</a>
+    </div>
+
+</div>
+
+</body>
+</html>

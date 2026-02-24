@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Secure Key Management</title>
+
+    <style>
+        /* ================================
+           GLOBAL RESET & BASE
+        ================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #1a1a1a;
+        }
+
+        /* ================================
+           MAIN CONTAINER
+        ================================= */
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        /* ================================
+           HEADER
+        ================================= */
+        .brand {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            color: #0d47a1;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .underline {
+            width: 70px;
+            height: 4px;
+            background: #0d47a1;
+            margin: 14px auto 40px;
+            border-radius: 10px;
+        }
+
+        /* ================================
+           TOP IMAGE
+        ================================= */
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .top-image {
+            max-width: 420px;
+            width: 100%;
+        }
+
+        /* ================================
+           TEXT & SECTIONS
+        ================================= */
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0d47a1;
+            margin: 40px 0 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* ================================
+           NOTE BOX
+        ================================= */
+        .note-box {
+            margin-top: 40px;
+            background: #f4f8ff;
+            border-left: 5px solid #0d47a1;
+            padding: 18px 20px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* ================================
+           BUTTON
+        ================================= */
+        .btn-container {
+            text-align: center;
+            margin-top: 45px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0d47a1;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-size: 15px;
+            text-decoration: none;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(13, 71, 161, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="brand">AuthX</div>
+        <div class="page-title">Secure Key Management</div>
+        <div class="underline"></div>
+
+        <!-- TOP IMAGE -->
+        <div class="image-wrapper">
+            <img src="images/secure-key-management.png"
+                 alt="Secure Key Management Illustration"
+                 class="top-image">
+        </div>
+
+        <!-- INTRO -->
+        <p>
+            <strong>Secure Key Management</strong> is the process of safely generating,
+            storing, rotating, and controlling access to encryption keys.
+            It ensures that encrypted data remains protected from unauthorized access.
+        </p>
+
+        <!-- HOW IT WORKS -->
+        <h3>How Secure Key Management Works</h3>
+        <ol>
+            <li>Encryption keys are securely generated.</li>
+            <li>Keys are stored in protected key vaults or HSMs.</li>
+            <li>Access to keys is strictly controlled.</li>
+            <li>Keys are rotated regularly to reduce risk.</li>
+        </ol>
+
+        <!-- SECURITY PRACTICES -->
+        <h3>Security Practices</h3>
+        <ul>
+            <li>Hardware Security Modules (HSM)</li>
+            <li>Key rotation and expiration policies</li>
+            <li>Role-based access control (RBAC)</li>
+            <li>Audit logging and monitoring</li>
+        </ul>
+
+        <!-- REAL-WORLD APPLICATIONS -->
+        <h3>Real-World Applications</h3>
+        <ul>
+            <li>Cloud encryption key management systems (KMS)</li>
+            <li>Database and storage encryption</li>
+            <li>Enterprise security infrastructures</li>
+            <li>Financial and healthcare systems</li>
+        </ul>
+
+        <!-- NOTE -->
+        <div class="note-box">
+            <strong>Note:</strong> Weak key management can compromise even the strongest
+            encryption. AuthX integrates Secure Key Management with Encryption at Rest,
+            Encryption in Transit, MFA, and Session Validation for robust protection.
+        </div>
+
+        <!-- BACK BUTTON -->
+        <div class="btn-container">
+            <a href="encryption-transit.html" class="btn">
+                ← Back to Encryption in Transit
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

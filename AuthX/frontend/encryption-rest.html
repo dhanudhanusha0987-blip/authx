@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Encryption at Rest</title>
+
+    <style>
+        /* ---------- Base ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body.auth-bg {
+            background: #ffffff;
+            color: #1a1a1a;
+        }
+
+        /* ---------- Container ---------- */
+        .info-container {
+            max-width: 950px;
+            margin: 60px auto;
+            padding: 40px 30px 50px;
+        }
+
+        /* ---------- Headings ---------- */
+        .brand-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            color: #0d47a1;
+            margin-bottom: 10px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .title-underline {
+            width: 70px;
+            height: 4px;
+            background: #0d47a1;
+            margin: 0 auto 45px;
+            border-radius: 10px;
+        }
+
+        .section-heading {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0d47a1;
+            margin: 40px 0 15px;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        /* ---------- Image ---------- */
+        .image-center {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .factor-image {
+            max-width: 420px;
+            width: 100%;
+        }
+
+        /* ---------- Text ---------- */
+        .section-text {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-top: 15px;
+        }
+
+        /* ---------- Lists ---------- */
+        .styled-list {
+            margin-left: 20px;
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .styled-list li {
+            margin-bottom: 8px;
+        }
+
+        /* ---------- Note Box ---------- */
+        .note-box {
+            background: #f4f8ff;
+            border-left: 5px solid #0d47a1;
+            padding: 18px 20px;
+            margin-top: 40px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* ---------- Button ---------- */
+        .button-center {
+            text-align: center;
+            margin-top: 45px;
+        }
+
+        .primary-btn {
+            display: inline-block;
+            background: #0d47a1;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 28px;
+            font-size: 15px;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        .primary-btn:hover {
+            background: #08306b;
+        }
+    </style>
+</head>
+
+<body class="auth-bg">
+
+    <div class="info-container">
+
+        <!-- Brand -->
+        <h1 class="brand-title">AuthX</h1>
+        <h2 class="page-title">Encryption at Rest</h2>
+        <div class="title-underline"></div>
+
+       
+
+        <div class="image-center">
+            <img src="images/encryption-at-rest.png"
+                 alt="Encryption at Rest Illustration"
+                 class="factor-image">
+        </div>
+
+        <!-- Description -->
+        <p class="section-text">
+            <strong>Encryption at Rest</strong> protects sensitive data stored on disks,
+            databases, and backups by converting it into unreadable encrypted form.
+            Even if storage systems are compromised, encrypted data remains secure.
+        </p>
+
+        <!-- How it Works -->
+        <h3 class="section-heading">How Encryption at Rest Works</h3>
+        <ol class="styled-list">
+            <li>Data is encrypted before being stored.</li>
+            <li>Encryption keys are securely managed.</li>
+            <li>Only authorized access allows decryption.</li>
+            <li>Attackers cannot read encrypted data.</li>
+        </ol>
+
+        <!-- Security Practices -->
+        <h3 class="section-heading">Security Practices</h3>
+        <ul class="styled-list">
+            <li>AES-256 encryption standards</li>
+            <li>Secure Key Management Systems (KMS)</li>
+            <li>Regular encryption key rotation</li>
+            <li>Encrypted backups and logs</li>
+        </ul>
+
+        <!-- Real World Applications -->
+        <h3 class="section-heading">Real-World Applications</h3>
+        <ul class="styled-list">
+            <li>Cloud storage security</li>
+            <li>Database and file system protection</li>
+            <li>Healthcare and banking data security</li>
+            <li>Enterprise server environments</li>
+        </ul>
+
+        <!-- Note -->
+        <div class="note-box">
+            <strong>Note:</strong> Encryption at Rest alone is not sufficient.
+            AuthX integrates this protection with MFA, Session Validation,
+            Device & Location checks, and Threat Detection for complete security.
+        </div>
+
+        <!-- Back Button -->
+        <div class="button-center">
+            <a href="index.html" class="primary-btn">← Back to MFA</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

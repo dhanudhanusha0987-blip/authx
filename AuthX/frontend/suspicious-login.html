@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AuthX | Suspicious Login Attempts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #1f2937;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 40px 30px 80px;
+    }
+
+    /* ===== HEADER (same as Knowledge / Human) ===== */
+    .page-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .brand {
+      font-size: 34px;
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 6px;
+    }
+
+    .page-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 14px;
+    }
+
+    .title-underline {
+      width: 70px;
+      height: 4px;
+      background: #2563eb;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+
+    /* ===== TOP IMAGE ===== */
+    .top-image {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .top-image img {
+      max-width: 420px;
+      width: 100%;
+    }
+
+    /* ===== CONTENT ===== */
+    p {
+      font-size: 15px;
+      color: #374151;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #1e40af;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-bottom: 24px;
+    }
+
+    ul li {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    ol {
+      padding-left: 22px;
+      margin-bottom: 24px;
+    }
+
+    ol li {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    /* ===== NOTE BOX (same as Knowledge page) ===== */
+    .note-box {
+      display: flex;
+      gap: 14px;
+      background: #f1f5ff;
+      border-left: 5px solid #2563eb;
+      padding: 16px 18px;
+      margin-top: 50px;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #1f2937;
+    }
+
+    .note-box strong {
+      font-weight: 600;
+    }
+
+    /* ===== BUTTON ===== */
+    .back-btn {
+      display: inline-block;
+      margin: 40px auto 0;
+      background: #2563eb;
+      color: #ffffff;
+      padding: 10px 26px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .back-btn:hover {
+      opacity: 0.9;
+    }
+
+    .btn-center {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- ===== HEADING ===== -->
+    <div class="page-header">
+      <h1 class="brand">AuthX</h1>
+      <h2 class="page-title">Suspicious Login Attempts</h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <!-- ===== TOP IMAGE ===== -->
+    <div class="top-image">
+      <!-- Replace image if needed -->
+      <img src="images/suspicious-login.png" alt="Suspicious Login Illustration">
+    </div>
+
+    <!-- ===== DESCRIPTION ===== -->
+    <p>
+      <strong>Suspicious Login Attempts</strong> are abnormal authentication activities
+      that indicate potential security threats. These attempts commonly arise from
+      brute-force attacks, credential stuffing, or unauthorized access attempts using
+      stolen credentials.
+    </p>
+
+    <!-- ===== INDICATORS ===== -->
+    <h3>Common Indicators</h3>
+    <ul>
+      <li>Multiple failed login attempts within a short time frame</li>
+      <li>Repeated password guessing from the same IP address</li>
+      <li>Login attempts using leaked or compromised credentials</li>
+      <li>Unusual login behavior outside normal user patterns</li>
+    </ul>
+
+    <!-- ===== FLOW ===== -->
+    <h3>Detection Flow</h3>
+    <ol>
+      <li>User enters incorrect credentials repeatedly.</li>
+      <li>System tracks failure count and login frequency.</li>
+      <li>Predefined thresholds are exceeded.</li>
+      <li>Account is locked or additional verification is triggered.</li>
+    </ol>
+
+    <!-- ===== SECURITY ===== -->
+    <h3>Security Practices</h3>
+    <ul>
+      <li>Temporary account lockout after repeated failures</li>
+      <li>CAPTCHA and human verification challenges</li>
+      <li>Rate limiting and IP monitoring</li>
+      <li>Security alerts to users and administrators</li>
+    </ul>
+
+    <!-- ===== NOTE ===== -->
+    <div class="note-box">
+      <strong>Note:</strong>
+      Suspicious login detection is most effective when combined with
+      MFA layers such as Human Verification, Device & Location Checks,
+      and Session Validation to provide multi-layer protection.
+    </div>
+
+    <!-- ===== BACK BUTTON ===== -->
+    <div class="btn-center">
+      <a href="threat.html" class="back-btn">← Back to Threat Detection</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

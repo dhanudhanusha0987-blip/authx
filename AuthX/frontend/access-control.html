@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Access Control</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #020c3a, #0b5ed7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-card {
+            background: #ffffff;
+            width: 480px;
+            border-radius: 18px;
+            padding: 40px 35px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+        }
+
+        .brand {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            color: #1e5eff;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 0 14px;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 14.5px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .access-item {
+            display: flex;
+            gap: 12px;
+            padding: 14px 0 14px 16px;
+            border-left: 4px solid #1e5eff;
+            margin-bottom: 22px;
+            text-decoration: none;
+            color: #1a1a1a;
+            border-radius: 10px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+        }
+
+        .access-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(30, 94, 255, 0.25);
+            background: #f8faff;
+        }
+
+        .item-icon {
+            font-size: 18px;
+            margin-top: 2px;
+        }
+
+        .item-text h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .item-text p {
+            font-size: 14.5px;
+            color: #555;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            background: #1e5eff;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: transform 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="main-card">
+
+    <div class="brand">AuthX</div>
+    <div class="title">Access Control</div>
+
+    <p class="description">
+        Access Control defines who can access resources and what actions they are
+        allowed to perform within a system.
+    </p>
+
+    <!-- RBAC -->
+    <a href="role-based-access-control.html" class="access-item">
+        <span class="item-icon">👤</span>
+        <div class="item-text">
+            <h4>Role-Based Access Control (RBAC)</h4>
+            <p>Access is granted based on predefined user roles.</p>
+        </div>
+    </a>
+
+    <!-- ABAC -->
+    <a href="attribute-based-access-control.html
+" class="access-item">
+        <span class="item-icon">🏷️</span>
+        <div class="item-text">
+            <h4>Attribute-Based Access Control (ABAC)</h4>
+            <p>Access decisions are made using attributes.</p>
+        </div>
+    </a>
+
+    <!-- Least Privilege -->
+    <a href="principle-of-least-privilege.html" class="access-item">
+        <span class="item-icon">🔒</span>
+        <div class="item-text">
+            <h4>Principle of Least Privilege</h4>
+            <p>Users receive only the minimum access required.</p>
+        </div>
+    </a>
+
+    <!-- Monitoring -->
+    <a href="access-monitoring-and-auditing.html" class="access-item">
+        <span class="item-icon">📊</span>
+        <div class="item-text">
+            <h4>Access Monitoring & Auditing</h4>
+            <p>Tracks and reviews access activity.</p>
+        </div>
+    </a>
+
+    <div class="btn-container">
+        <a href="data-encryption.html" class="btn">← Back To Home</a>
+    </div>
+
+</div>
+
+</body>
+</html>
+

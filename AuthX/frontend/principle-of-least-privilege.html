@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Principle of Least Privilege</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .brand {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            color: #0b3d91;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 4px;
+            background-color: #0b3d91;
+            margin: 15px auto 35px;
+            border-radius: 2px;
+        }
+
+        /* Image */
+        .top-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .top-image img {
+            max-width: 420px;
+            width: 100%;
+        }
+
+        /* Headings */
+        h2 {
+            color: #0b3d91;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        h3 {
+            color: #0b3d91;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Note box */
+        .note-box {
+            background-color: #f5f9ff;
+            border-left: 5px solid #0b3d91;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 15px;
+        }
+
+        .note-box strong {
+            color: #0b3d91;
+        }
+
+        /* Button */
+        .btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            background-color: #0b3d91;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 500;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #092f6b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Title -->
+    <div class="brand">AuthX</div>
+    <div class="subtitle">Principle of Least Privilege</div>
+    <div class="divider"></div>
+
+    <!-- Image Section -->
+    <div class="top-image">
+        <img src="images/least-privilege.png" alt="Principle of Least Privilege">
+    </div>
+
+    <!-- Content -->
+    <h2>What is the Principle of Least Privilege?</h2>
+    <p>
+        The Principle of Least Privilege (PoLP) is a fundamental security concept that
+        ensures users, applications, and systems are granted only the minimum level
+        of access required to perform their tasks—nothing more.
+    </p>
+
+    <h3>Why Least Privilege is Important</h3>
+    <ul>
+        <li>Limits damage from compromised accounts</li>
+        <li>Reduces attack surface</li>
+        <li>Prevents unauthorized data access</li>
+        <li>Improves system stability and control</li>
+    </ul>
+
+    <h3>How Least Privilege Works</h3>
+    <ol>
+        <li>User or process is assigned minimal permissions</li>
+        <li>Access is restricted to required resources only</li>
+        <li>Temporary privileges are granted when necessary</li>
+        <li>Permissions are reviewed and revoked regularly</li>
+    </ol>
+
+    <h3>Security Practices Using Least Privilege</h3>
+    <ul>
+        <li>Role-based and attribute-based permissions</li>
+        <li>Just-in-time (JIT) access</li>
+        <li>Separation of duties</li>
+        <li>Regular access audits</li>
+    </ul>
+
+    <h3>Real-World Applications</h3>
+    <ul>
+        <li>Operating systems and user accounts</li>
+        <li>Database and cloud service access</li>
+        <li>Enterprise IT infrastructure</li>
+        <li>Healthcare and financial systems</li>
+    </ul>
+
+    <div class="note-box">
+        <strong>Note:</strong> The Principle of Least Privilege is most effective when
+        combined with RBAC, ABAC, MFA, session validation, and device & location checks.
+        AuthX enforces least privilege to minimize security risks.
+    </div>
+
+    <div class="btn-container">
+        <a href="access-control.html" class="btn">← Back to Access Control</a>
+    </div>
+
+</div>
+
+</body>
+</html>

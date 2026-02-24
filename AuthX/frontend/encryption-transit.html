@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AuthX | Encryption in Transit</title>
+
+    <style>
+        /* ================================
+           GLOBAL RESET & BASE
+        ================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #1a1a1a;
+        }
+
+        /* ================================
+           MAIN CONTAINER
+        ================================= */
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        /* ================================
+           HEADER
+        ================================= */
+        .brand {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            color: #0d47a1;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .underline {
+            width: 70px;
+            height: 4px;
+            background: #0d47a1;
+            margin: 14px auto 40px;
+            border-radius: 10px;
+        }
+
+        /* ================================
+           TOP IMAGE
+        ================================= */
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .top-image {
+            max-width: 420px;
+            width: 100%;
+        }
+
+        /* ================================
+           TEXT & SECTIONS
+        ================================= */
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0d47a1;
+            margin: 40px 0 15px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* ================================
+           NOTE BOX
+        ================================= */
+        .note-box {
+            margin-top: 40px;
+            background: #f4f8ff;
+            border-left: 5px solid #0d47a1;
+            padding: 18px 20px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* ================================
+           BUTTON
+        ================================= */
+        .btn-container {
+            text-align: center;
+            margin-top: 45px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0d47a1;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-size: 15px;
+            text-decoration: none;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(13, 71, 161, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="brand">AuthX</div>
+        <div class="page-title">Encryption in Transit</div>
+        <div class="underline"></div>
+
+        <!-- TOP IMAGE -->
+        <div class="image-wrapper">
+            <img src="images/encryption-transit.png"
+                 alt="Encryption in Transit Illustration"
+                 class="top-image">
+        </div>
+
+        <!-- INTRO -->
+        <p>
+            <strong>Encryption in Transit</strong> ensures that data remains secure
+            while it is being transmitted between systems, networks, and devices.
+            It prevents attackers from intercepting or modifying sensitive information.
+        </p>
+
+        <!-- HOW IT WORKS -->
+        <h3>How Encryption in Transit Works</h3>
+        <ol>
+            <li>Data is encrypted before it leaves the sender.</li>
+            <li>A secure communication channel is established.</li>
+            <li>Encrypted data travels across the network.</li>
+            <li>Only the intended recipient can decrypt the data.</li>
+        </ol>
+
+        <!-- SECURITY PRACTICES -->
+        <h3>Security Practices</h3>
+        <ul>
+            <li>Use of HTTPS and TLS protocols</li>
+            <li>Certificate-based authentication</li>
+            <li>Strong encryption algorithms</li>
+            <li>Protection against man-in-the-middle attacks</li>
+        </ul>
+
+        <!-- REAL-WORLD APPLICATIONS -->
+        <h3>Real-World Applications</h3>
+        <ul>
+            <li>Online banking and payment systems</li>
+            <li>Secure web browsing</li>
+            <li>API and server-to-server communication</li>
+            <li>Cloud and IoT data transmission</li>
+        </ul>
+
+        <!-- NOTE -->
+        <div class="note-box">
+            <strong>Note:</strong> Encryption in Transit is a critical security layer.
+            AuthX combines this mechanism with Encryption at Rest, MFA, Session Validation,
+            and Device & Location checks to ensure complete protection.
+        </div>
+
+        <!-- BACK BUTTON -->
+        <div class="btn-container">
+            <a href="data-encryption.html" class="btn">
+                ← Back to Data Encryption
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

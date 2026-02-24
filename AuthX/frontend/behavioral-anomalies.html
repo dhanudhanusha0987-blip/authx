@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AuthX | Behavioral Anomalies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #1f2937;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 40px 30px 80px;
+    }
+
+    /* ===== HEADER ===== */
+    .page-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .brand {
+      font-size: 34px;
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 6px;
+    }
+
+    .page-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 14px;
+    }
+
+    .title-underline {
+      width: 70px;
+      height: 4px;
+      background: #2563eb;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+
+    /* ===== TOP IMAGE ===== */
+    .top-image {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .top-image img {
+      max-width: 420px;
+      width: 100%;
+    }
+
+    /* ===== CONTENT ===== */
+    p {
+      font-size: 15px;
+      color: #374151;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #1e40af;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-bottom: 24px;
+    }
+
+    ul li {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    ol {
+      padding-left: 22px;
+      margin-bottom: 24px;
+    }
+
+    ol li {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    /* ===== NOTE BOX ===== */
+    .note-box {
+      display: flex;
+      gap: 14px;
+      background: #f1f5ff;
+      border-left: 5px solid #2563eb;
+      padding: 16px 18px;
+      margin-top: 50px;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #1f2937;
+    }
+
+    .note-box strong {
+      font-weight: 600;
+    }
+
+    /* ===== BUTTON ===== */
+    .btn-center {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-btn {
+      background: #2563eb;
+      color: #ffffff;
+      padding: 10px 26px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .back-btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- ===== HEADING ===== -->
+    <div class="page-header">
+      <h1 class="brand">AuthX</h1>
+      <h2 class="page-title">Behavioral Anomalies</h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <!-- ===== TOP IMAGE ===== -->
+    <div class="top-image">
+      <!-- Replace image if needed -->
+      <img src="images/behavioral-anomalies.png" alt="Behavioral Anomalies Illustration">
+    </div>
+
+    <!-- ===== DESCRIPTION ===== -->
+    <p>
+      <strong>Behavioral Anomalies</strong> refer to unusual user behavior patterns
+      observed during authentication or system usage. These anomalies often
+      indicate compromised accounts, insider threats, or automated attacks
+      that deviate from a user’s normal behavior profile.
+    </p>
+
+    <!-- ===== INDICATORS ===== -->
+    <h3>Common Indicators</h3>
+    <ul>
+      <li>Login attempts at unusual times or abnormal frequencies</li>
+      <li>Rapid access to multiple resources within a short duration</li>
+      <li>Deviation from established user behavior patterns</li>
+      <li>Unusual navigation or interaction behavior</li>
+    </ul>
+
+    <!-- ===== FLOW ===== -->
+    <h3>Detection Flow</h3>
+    <ol>
+      <li>System continuously monitors user behavior patterns.</li>
+      <li>Baseline behavior profiles are established over time.</li>
+      <li>Real-time behavior is compared against known baselines.</li>
+      <li>Anomalies trigger alerts or additional authentication checks.</li>
+    </ol>
+
+    <!-- ===== SECURITY ===== -->
+    <h3>Security Practices</h3>
+    <ul>
+      <li>Behavioral analytics and machine learning models</li>
+      <li>Adaptive authentication based on risk levels</li>
+      <li>Step-up authentication for anomalous behavior</li>
+      <li>Continuous monitoring and alerting</li>
+    </ul>
+
+    <!-- ===== NOTE ===== -->
+    <div class="note-box">
+      <strong>Note:</strong>
+      Behavioral anomaly detection is most effective when combined with
+      Device Verification, Location Checks, and Session Validation to
+      provide adaptive and intelligent security protection.
+    </div>
+
+    <!-- ===== BACK BUTTON ===== -->
+    <div class="btn-center">
+      <a href="threat.html" class="back-btn">← Back to Threat Detection</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
